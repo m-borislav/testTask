@@ -40,20 +40,7 @@ public class Dijkstra {
             source = resultSet.getInt("startpointId");
             endPoint = resultSet.getInt("endpointId");
         }
-/*
-        while (resultSet.next()){
-             if(adjacencyList.get(resultSet.getInt("length")).isEmpty()){
-                isLengthExist = false;
-            } else {
-                isLengthExist = true;
-            }
-        }
 
-        if(isLengthExist == false){
-            System.out.println("False");
-        } else {
-            System.out.println("True");
-        }*/
         System.out.println("Start point\t\t" + "End point\t\t" + "Length");
         try{
             System.out.println((source + 1) + " \t\t\t\t " + (endPoint + 1) + " \t\t\t\t " + graph.dist[endPoint]);

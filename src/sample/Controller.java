@@ -57,7 +57,6 @@ public class Controller {
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
-                //try {
                 try {
                     dijkstra.checkDijkstra((resultSet.getInt("start") - 1), (resultSet.getInt("end") - 1), v);
                 } catch (SQLException e) {
@@ -65,8 +64,6 @@ public class Controller {
                 } catch (ClassNotFoundException e) {
                     e.printStackTrace();
                 }
-                //} catch (NoSuchElementException e){
-                //  System.out.println("False");
             }
         });
     }
